@@ -1,0 +1,138 @@
+body{
+    font-family: Arial, sans-serif;
+    max-width: 100%;
+    max-height:100%;
+    overflow: hidden;
+}
+
+h1{
+    color: green;
+    text-align: center;
+    margin:0px;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:5px;
+}
+
+.container{
+    background-color: rgb(120, 61, 27);
+    position: absolute;
+    height:100%;
+    padding:20px;
+    width:10%;
+    top:0px;
+}
+
+#left-container{
+    left:0px;
+}
+
+#right-container{
+    right:0px;
+}
+
+.plant-holder{
+    position: relative;
+    height: 13%; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+
+}
+
+.plant{
+    position: absolute;
+    max-width:150%;
+    max-height:150%;
+    z-index:2;
+}
+
+.jar-walls{
+    background: #d1e1df;
+    width: 30%;
+    height: 70%;
+    bottom: 2%;
+	left: 35%;
+    position: absolute;
+    border-radius: 16px;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.jar-top{
+    background: #d1e1df;
+    width:20%;
+    height:5%;
+    position: absolute;
+    bottom: 72%;
+	left: 40.5%;
+    opacity: 0.5;
+	z-index: 1;
+    border-radius: 10px 10px 0 0;
+}
+
+.jar-bottom{
+    background: #d1e1df;
+    opacity: 0.7;
+	z-index: 1;
+    position: absolute;
+    bottom: 1%;
+	left: 37.5%;
+    width:25%;
+    height:1%;
+}
+
+.dirt{
+    background: #3a241d;
+    opacity: 0.7;
+	z-index: -1;
+    width: 30%;
+    height: 6%;
+    position: absolute;
+    bottom: 2%;
+    left: 35%;
+    border-radius: 0 0 1rem 1rem;
+}
+
+.jar-glossy-long{
+    height: 16%;
+    width:3%;
+    position: absolute;
+    bottom: 20%;
+    left: 10%;
+    background: #ddfbff;
+    border-radius: 1rem;
+
+}
+
+.jar-glossy-short{
+    width:3%;
+    height: 7%;
+    position: absolute;
+    bottom: 40%;
+    left: 10%;
+    background: #ddfbff;
+    border-radius: 1rem;
+}
+
+#resetButton{
+    border-radius: 7px;
+    height: 30px;
+    width: max-content;
+}
+
+#resetButton:hover{
+    background-color: rgba(166, 166, 166, 0.312);
+    cursor: pointer;  
+}
+
+@media screen and (max-width: 500px) {
+    header{
+        flex-direction: column;
+    }
+  }
