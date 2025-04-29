@@ -1,7 +1,7 @@
 # 🌿 My Terrarium
 My Terrarium is a simple interactive web application where users can create and customize their own virtual terrarium.
 This project was built to showcase front-end development skills in HTML, CSS, and JavaScript.
-
+![image info](./images/screenshot.PNG)
 ## 🚀 Getting Started
 ### Run locally
 1. Clone the repository:
